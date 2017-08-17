@@ -1,0 +1,7 @@
+Name,State,Country,Lat,Lon
+Koyna Wildlife Sanctuary, Maharashtra, India ,17.781902, 73.700935
+Dibru Saikhowa National Park, Assam, India ,27.669033, 95.362549
+Kaziranga National Park, Assam, India ,26.575863, 93.167046
+Shettihalli Wildlife Sanctuary, Karnataka, India ,13.894744, 75.389214
+Pobitora Wildlife Sanctuary, Assam, India,26.230619,92.054268
+Sri Venkateswara Zoological Park, Andhra Pradesh, India,13.630368,79.360222
