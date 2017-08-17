@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_791fe61338024c848484ab1c33ab6e39 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_791fe61338024c848484ab1c33ab6e39" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_791fe61338024c848484ab1c33ab6e39 = L.map(
+                                  'map_791fe61338024c848484ab1c33ab6e39',
+                                  {center: [25.041807,77.899597],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_32cd0bc1036040628925bef444a0d39c = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_791fe61338024c848484ab1c33ab6e39);
+
+        
+    
+            var feature_group_b2dc831a6c1a4571be16e0356aabd96f = L.featureGroup(
+                ).addTo(map_791fe61338024c848484ab1c33ab6e39);
+        
+    
+
+            var circle_marker_83aa79a9f04f4bb29a56c7325d4f2025 = L.circleMarker(
+                [17.781902,73.700935],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_b2dc831a6c1a4571be16e0356aabd96f);
+            
+    
+            var popup_955c6b9646e94965a6c2af841a6a7ebc = L.popup({maxWidth: '300'});
+
+            
+                var html_77d222d7b75642c6b2754381883d156a = $('<div id="html_77d222d7b75642c6b2754381883d156a" style="width: 100.0%; height: 100.0%;">Koyna Wildlife Sanctuary</div>')[0];
+                popup_955c6b9646e94965a6c2af841a6a7ebc.setContent(html_77d222d7b75642c6b2754381883d156a);
+            
+
+            circle_marker_83aa79a9f04f4bb29a56c7325d4f2025.bindPopup(popup_955c6b9646e94965a6c2af841a6a7ebc);
+
+            
+        
+    
+
+            var circle_marker_4cde0350d1ab41cea480736cb224cdcc = L.circleMarker(
+                [27.669033,95.362549],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_b2dc831a6c1a4571be16e0356aabd96f);
+            
+    
+            var popup_1fc2739731f8402ba14733c68485e655 = L.popup({maxWidth: '300'});
+
+            
+                var html_2b83260d981c4b59a1e3ecec6b693a54 = $('<div id="html_2b83260d981c4b59a1e3ecec6b693a54" style="width: 100.0%; height: 100.0%;">Dibru Saikhowa National Park</div>')[0];
+                popup_1fc2739731f8402ba14733c68485e655.setContent(html_2b83260d981c4b59a1e3ecec6b693a54);
+            
+
+            circle_marker_4cde0350d1ab41cea480736cb224cdcc.bindPopup(popup_1fc2739731f8402ba14733c68485e655);
+
+            
+        
+    
+
+            var circle_marker_9689f1ba01b44dab815977958359a293 = L.circleMarker(
+                [26.575863,93.167046],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_b2dc831a6c1a4571be16e0356aabd96f);
+            
+    
+            var popup_c2eacc4f43504b4aa61059a94d341758 = L.popup({maxWidth: '300'});
+
+            
+                var html_87ef291cc40d451caf6795f50407b140 = $('<div id="html_87ef291cc40d451caf6795f50407b140" style="width: 100.0%; height: 100.0%;">Kaziranga National Park</div>')[0];
+                popup_c2eacc4f43504b4aa61059a94d341758.setContent(html_87ef291cc40d451caf6795f50407b140);
+            
+
+            circle_marker_9689f1ba01b44dab815977958359a293.bindPopup(popup_c2eacc4f43504b4aa61059a94d341758);
+
+            
+        
+    
+
+            var circle_marker_24d1627e469943ccbad58d312cb79323 = L.circleMarker(
+                [13.894744,75.389214],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_b2dc831a6c1a4571be16e0356aabd96f);
+            
+    
+            var popup_6eda0de96d4a403093805b61f2cb0d4d = L.popup({maxWidth: '300'});
+
+            
+                var html_7b75494db09745d79ec927d50c606a5a = $('<div id="html_7b75494db09745d79ec927d50c606a5a" style="width: 100.0%; height: 100.0%;">Shettihalli Wildlife Sanctuary</div>')[0];
+                popup_6eda0de96d4a403093805b61f2cb0d4d.setContent(html_7b75494db09745d79ec927d50c606a5a);
+            
+
+            circle_marker_24d1627e469943ccbad58d312cb79323.bindPopup(popup_6eda0de96d4a403093805b61f2cb0d4d);
+
+            
+        
+    
+
+            var circle_marker_0db30029babb4fbdb282533568bb29bf = L.circleMarker(
+                [26.230619,92.054268],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_b2dc831a6c1a4571be16e0356aabd96f);
+            
+    
+            var popup_39f1e6db6d8546838edf3a0c80f64d16 = L.popup({maxWidth: '300'});
+
+            
+                var html_dc161dd56f9a4a90a05a4644a2154f83 = $('<div id="html_dc161dd56f9a4a90a05a4644a2154f83" style="width: 100.0%; height: 100.0%;">Pobitora Wildlife Sanctuary</div>')[0];
+                popup_39f1e6db6d8546838edf3a0c80f64d16.setContent(html_dc161dd56f9a4a90a05a4644a2154f83);
+            
+
+            circle_marker_0db30029babb4fbdb282533568bb29bf.bindPopup(popup_39f1e6db6d8546838edf3a0c80f64d16);
+
+            
+        
+    
+
+            var circle_marker_38b58caa29094ec6bcf060f3fc82978b = L.circleMarker(
+                [13.630368,79.360222],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'green',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_b2dc831a6c1a4571be16e0356aabd96f);
+            
+    
+            var popup_e1c448625e98453394bd63b58376aae5 = L.popup({maxWidth: '300'});
+
+            
+                var html_e1ec0a24722a449f9dcd75eddd422963 = $('<div id="html_e1ec0a24722a449f9dcd75eddd422963" style="width: 100.0%; height: 100.0%;">Sri Venkateswara Zoological Park</div>')[0];
+                popup_e1c448625e98453394bd63b58376aae5.setContent(html_e1ec0a24722a449f9dcd75eddd422963);
+            
+
+            circle_marker_38b58caa29094ec6bcf060f3fc82978b.bindPopup(popup_e1c448625e98453394bd63b58376aae5);
+
+            
+        
+    
+            var feature_group_0cd734f919804999b1235125e3548139 = L.featureGroup(
+                ).addTo(map_791fe61338024c848484ab1c33ab6e39);
+        
+    
+
+            var circle_marker_2d01ae17ebe14203845dd30ce724da1c = L.circleMarker(
+                [12.278,93.858],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_0cd734f919804999b1235125e3548139);
+            
+    
+            var popup_b8523237f9b742e79a5622dc37994cff = L.popup({maxWidth: '300'});
+
+            
+                var html_144d5e78420944e99b0a22e17bd94a5a = $('<div id="html_144d5e78420944e99b0a22e17bd94a5a" style="width: 100.0%; height: 100.0%;">Barren Island</div>')[0];
+                popup_b8523237f9b742e79a5622dc37994cff.setContent(html_144d5e78420944e99b0a22e17bd94a5a);
+            
+
+            circle_marker_2d01ae17ebe14203845dd30ce724da1c.bindPopup(popup_b8523237f9b742e79a5622dc37994cff);
+
+            
+        
+    
+
+            var circle_marker_fde68f6888af458bb3424728070a7311 = L.circleMarker(
+                [13.43,94.28],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_0cd734f919804999b1235125e3548139);
+            
+    
+            var popup_d397c65116eb49e49df0fcaf797980c9 = L.popup({maxWidth: '300'});
+
+            
+                var html_3d326c5715e0441fa15b1874b21a0b63 = $('<div id="html_3d326c5715e0441fa15b1874b21a0b63" style="width: 100.0%; height: 100.0%;">Narcondam</div>')[0];
+                popup_d397c65116eb49e49df0fcaf797980c9.setContent(html_3d326c5715e0441fa15b1874b21a0b63);
+            
+
+            circle_marker_fde68f6888af458bb3424728070a7311.bindPopup(popup_d397c65116eb49e49df0fcaf797980c9);
+
+            
+        
+    
+
+            var circle_marker_e277a27ff5d446a08c4ddfa76e171f4e = L.circleMarker(
+                [18.51,73.43],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_0cd734f919804999b1235125e3548139);
+            
+    
+            var popup_6e051e43339443c1b45b142d61a157f9 = L.popup({maxWidth: '300'});
+
+            
+                var html_cbd16e7327144e8bb55b761c7f1dd0ec = $('<div id="html_cbd16e7327144e8bb55b761c7f1dd0ec" style="width: 100.0%; height: 100.0%;">Deccan Traps</div>')[0];
+                popup_6e051e43339443c1b45b142d61a157f9.setContent(html_cbd16e7327144e8bb55b761c7f1dd0ec);
+            
+
+            circle_marker_e277a27ff5d446a08c4ddfa76e171f4e.bindPopup(popup_6e051e43339443c1b45b142d61a157f9);
+
+            
+        
+    
+
+            var circle_marker_b5c8901892e74c9e920399b17d787205 = L.circleMarker(
+                [12.07,92.47],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_0cd734f919804999b1235125e3548139);
+            
+    
+            var popup_6b8baf6c8c714682bed5df21f537c876 = L.popup({maxWidth: '300'});
+
+            
+                var html_395a4e3ec10d4002ac73c87e2f1e45ed = $('<div id="html_395a4e3ec10d4002ac73c87e2f1e45ed" style="width: 100.0%; height: 100.0%;">Baratang</div>')[0];
+                popup_6b8baf6c8c714682bed5df21f537c876.setContent(html_395a4e3ec10d4002ac73c87e2f1e45ed);
+            
+
+            circle_marker_b5c8901892e74c9e920399b17d787205.bindPopup(popup_6b8baf6c8c714682bed5df21f537c876);
+
+            
+        
+    
+
+            var circle_marker_9def5a7e06304035ae97b821ae952208 = L.circleMarker(
+                [28.06,76.03],
+                {
+                    color: 'black',
+                    weight: 2,
+                    fillColor: 'red',
+                    fillOpacity: 0.6
+                    }
+                )
+                .setRadius(5)
+                .addTo(feature_group_0cd734f919804999b1235125e3548139);
+            
+    
+            var popup_c061dfe16ee34af984ad6a56a6010ee4 = L.popup({maxWidth: '300'});
+
+            
+                var html_b84030f1351a42cf8fb7db6be6a0dc84 = $('<div id="html_b84030f1351a42cf8fb7db6be6a0dc84" style="width: 100.0%; height: 100.0%;">Dhosi Hill</div>')[0];
+                popup_c061dfe16ee34af984ad6a56a6010ee4.setContent(html_b84030f1351a42cf8fb7db6be6a0dc84);
+            
+
+            circle_marker_9def5a7e06304035ae97b821ae952208.bindPopup(popup_c061dfe16ee34af984ad6a56a6010ee4);
+
+            
+        
+</script>
